@@ -1,0 +1,129 @@
+/* Estilos generales */
+html {
+    font-family: "Open Sans",
+        sans-serif;
+    font-size: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Listas */
+ol {
+    background: red;
+}
+
+.lista {
+    background: green;
+}
+
+/* Modelo de caja */
+.container {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.parrafo {
+    margin-bottom: 10px;
+    padding: 50px;
+    border: 2px solid red;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.parrafo-2 {
+    border: 5px dashed green;
+    font-size: 1em;
+}
+
+/* Unidades de medida px, %, vh vw, rem, em */
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Display */
+.container-display {
+    width: 100%;
+    height: 500px;
+}
+
+.item {
+    background-color: red;
+}
+
+/* Todos los elementos item que esten dentro de la clase container-display */
+.container-display .item {
+    background-color: blue;
+}
+
+/* Primer nivel */
+.container-display>.item {
+    background-color: green;
+}
+
+/* primer elemento 
+.container-display .item:first-child {
+    background-color: yellow;
+}
+*/
+
+
+/* ultimo elemento
+.container-display .item:last-child {
+    background-color: orange;
+}
+*/
+
+/* Seleccion por patron */
+.container-display .item:nth-child(2n) {
+    background-color: orange;
+}
+
+/* Sobreescribir estilos en sengunda clase 
+.second-item {
+    background-color: red !important;
+}
+*/
+
+/* Posicionamiento */
+.second-item {
+    /*position: sticky; */
+    /* static, relative, absolute, fixed, sticky */
+
+    /* hidden, scroll, auto */
+    /*top: 20px; */
+}
+
+/* Flex box */
+.second-level {
+    display: flex;
+    gap: 10px;
+    flex-flow: row wrap;
+    padding: 20px;
+}
+
+.item {
+    height: 100px;
+    flex: 1 0 200px;
+}
+
+.second-item {}
+
+/* Centrar div */
+.center-div {
+    margin-top: 50px;
+    width: 200px;
+    background-color: black;
+    height: 200px;
+    margin: 0 auto;
+}
